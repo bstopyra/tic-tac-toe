@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  height: 95vh;
+  background: url(images/photo-1544306094-e2dcf9479da3.png)
+    no-repeat;
+  background-size: cover;
+  font-family: "Allura", cursive;
+}
+
+.header {
+  font-size: 72px;
+  text-align: center;
+  background-color: rgba(193, 235, 255, 0.6);
+  backdrop-filter: blur(5px);
+}
+
+.header > h1 {
+  margin: 0;
+  padding: 35px;
+  color: white;
+  text-shadow: 4px 4px rgb(22, 192, 127);
+}
+
+.container__div-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gameboard {
+  height: 40vh;
+  width: 40vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 6px;
+  background-color: rgba(255, 216, 224, 0.719);
+  padding: 15px;
+}
+
+.game-square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8vh;
+  padding: 0;
+  background-color: rgba(118, 159, 179, 0.6);
+  backdrop-filter: blur(5px);
+  font-weight: 600;
+  transition: 0.3s;
+  color: white;
+  text-shadow: 3px 3px rgba(255, 216, 224, 1);
+}
+
+.game-square:hover {
+  background-color: rgba(118, 159, 179, 0.9);
+}
+
+.player_turn {
+  font-size: 62px;
+  color: white;
+  text-shadow: 2px 2px rgb(22, 192, 127);
+  background-color: rgba(255, 216, 224, 0.4);
+  margin: 40px 0;
+  padding: 10px;
+  width: 18vw;
+  text-align: center;
+}
+
+.player_turn > p {
+  margin: 0;
+}
+
+#reset_button {
+  margin: 80px 0;
+  width: 18vh;
+  height: 7vh;
+  background-color: rgba(255, 216, 224, 0.6);
+  border: 0;
+  color: #000;
+  mix-blend-mode: screen;
+  font-size: 54px;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+#reset_button:hover {
+  background-color: rgba(255, 216, 224, 1);
+}
