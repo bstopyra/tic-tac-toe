@@ -29,6 +29,7 @@ const boardController = (() => {
   const gameSquares = document.querySelectorAll(".game-square");
   const currentPlayer = document.getElementById("current_player");
   const resetButton = document.getElementById("reset_button");
+  const pageMask = document.getElementById("page-mask");
 
   gameSquares.forEach((square) => {
     square.addEventListener("click", (e) => {
@@ -46,6 +47,7 @@ const boardController = (() => {
   };
 
   const setWinnersMessage = (winner) => {
+    pageMask.style.display = "block";
     if (winner === "Draw") {
       setMessageElement("It's a draw!");
     } else {
@@ -58,6 +60,7 @@ const boardController = (() => {
   };
 
   resetButton.addEventListener("click", (e) => {
+    pageMask.style.display = "contents";
     gameController.resetGame();
     Gameboard.reset();
     updateGameboard();

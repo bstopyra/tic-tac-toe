@@ -1,8 +1,7 @@
 body {
   margin: 0;
   height: 95vh;
-  background: url(images/photo-1544306094-e2dcf9479da3.png)
-    no-repeat;
+  background: url(images/photo-1544306094-e2dcf9479da3.png) no-repeat;
   background-size: cover;
   font-family: "Allura", cursive;
 }
@@ -87,4 +86,10 @@ body {
 
 #reset_button:hover {
   background-color: rgba(255, 216, 224, 1);
+}
+
+#page-mask {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: contents;
+  height: 100vh
 }
